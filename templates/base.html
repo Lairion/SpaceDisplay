@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>{% block headtitle %}{{ title }}{% endblock %}</title>
+	<!--<link rel="stylesheet" type="text/css" href="{% static 'css/desktop' %}"/>-->
+	{% include "CSS.html" %}
+	{% include "JS.html" %}
+	{% block head %}
+
+	{% endblock %}
+</head>
+<body>
+<div class="container-fluid">
+{% include "navbar.html" %}
+<div id="tooltip"></div>
+	<div id="row">
+		{% block desktop %}
+
+		{% endblock %}
+	</div>
+</div>	  
+</body>
+</html>

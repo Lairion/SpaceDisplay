@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shipdisplay',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -118,14 +119,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static_in_pro/out_static/'
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_pro","static_root")
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static_in_pro","out_static"),
-    #os.path.join(BASE_DIR, "static_in_env"),
-    #'/var/www/static/',
+    
 ]
 
 MEDIA_URL = '/media/'

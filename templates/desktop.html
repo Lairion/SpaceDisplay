@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block headtitle %} {{ title }} | {{ block.super }} {% endblock %}
+{% block head %}
+
+{% endblock %} 
+{% block desktop %}
+	<div class ="row" style="height: 78%";>
+		<div class="mainTitle" id="statusBar"></div>
+		<div class='SpaceWindow col-xs-12 col-md-12' style="height: 98%; position: relative; z-index: 1; top:-2%;">
+		</div>
+	</div>
+	<div class="row" style="height: 6% ">
+		<div class="mainTitle" id="consoleBar"><p>Console</p></div>
+		<div class="SpaceWindow col-xs-12 col-md-12" style="height:98%; position: relative; z-index: 1; top:-30%;"><input type="text" class="SpaceWindow" style="position: relative; bottom: -10%"></input></div>
+	</div>
+{% endblock %}

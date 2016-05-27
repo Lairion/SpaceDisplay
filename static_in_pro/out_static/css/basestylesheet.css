@@ -1,0 +1,48 @@
+
+body {
+	background-image: url('img/background/sixgran2.svg');
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+#desktop {
+	height: 100%;
+	width: 100%;
+	
+}
+.navbutton {
+	fill:rgba(41, 170, 225, 0.1);
+	stroke:rgba(0, 255, 255, 1);
+	stroke-miterlimit:10;
+}
+#navb{
+	fill:url(#firstbutton);
+}
+
+#navmenu {
+	background-color: none;
+}
+#tooltip {
+	font-size: 18px; 
+  	z-index: 9999;
+  	position: absolute;
+	display: none;
+  	top:0px;
+  	left:0px;
+  	background-color: #FFA500;
+  	padding: 5px 10px 5px 10px;
+  	color: black;
+  	border-style : Solid;
+  	border-color : #00FFFF;
+  	border-color :rgba(0, 255, 255, 1);
+  	border-width: 3px;
+  	.opacity(0.5);
+  	.rounded(5px);
+   
+}

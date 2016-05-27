@@ -1,0 +1,105 @@
+.SpaceWindow {
+	background : #29AAE1;
+  	background : rgba(41, 170, 225, 0.1);
+  	-moz-border-radius : 15px;
+    -webkit-border-radius : 15px;
+	text-align: center;
+	border-style : Solid;
+  	border-color : #00FFFF;
+  	border-color : rgba(0, 255, 255, 1);
+  	float: left;
+  	border-width: 0px 8px 0px 8px;
+
+}
+
+#menuInLeft {
+	border-width : 3pt;
+  	padding: 2.5%;
+  	height: 100%;
+  	float: left;
+  	flex:1;
+		
+}
+.borderbutton {
+	background-image: url(img/background/bgbttn.svg);
+	background-position: left top;
+	background-size: cover;
+	border-style : Solid;
+  	border-color : #00FFFF;
+  	border-color : rgba(0, 255, 255, 1);
+  	border-width : 2pt;
+  	
+  }
+.pButton {
+	font-family : Exo DemiBold;
+  	font-weight : bold;
+  	font-size : 15pt;
+  	color : #00FFFF;
+  	color : rgb(0, 255, 255);
+}
+#mainWindow {
+	border-top-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 3pt;
+	border-right-width: 3pt;
+	position: absolute;
+  			
+}
+
+#Console {
+	border-top-width: 0pt;
+	border-bottom-width: 0pt;
+	border-left-width: 3pt;
+	border-right-width: 3pt;
+	position: absolute;
+  	height :10%;
+	margin: 1%;
+	margin-top: 100%;
+	padding: 2.5%;
+}
+
+
+
+.mainTitle {
+	
+	position: relative; 
+	z-index: 5;
+
+}
+#statusBar {
+	left:40%; 
+	width: 20%;
+	background-color: #000000; 
+	-moz-border-radius : 10px;
+    -webkit-border-radius : 10px;
+	border-style : Solid;
+  	border-color : #FFFFE0;
+  	border-width: 0px 5px 0px 5px; 
+  	text-align: center;
+  	font-size: 30px;
+  	color: white; 
+  	height:5%;
+  	top: 0% 
+}
+
+#consoleBar {
+	left:45%;  
+	width: 10%; 
+	background-color: #000000; 
+	-moz-border-radius : 7px;
+    -webkit-border-radius : 7px;
+	border-style : Solid;
+  	border-color : #FFFFE0;
+  	border-width: 0px 3px 0px 3px; 
+  	text-align: center;
+  	font-size: 20px;
+  	color: white;
+  	height:40%;
+  	top: -20%;
+  	overflow: hidden;  
+  	float: left;
+
+ }
+
+
+

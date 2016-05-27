@@ -19,7 +19,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls, name=admin),
+    url(r'^',include('shipdisplay.urls')),
 ]
 
 if settings.DEBUG:
