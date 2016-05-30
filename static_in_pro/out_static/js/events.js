@@ -1,9 +1,8 @@
 $(document).ready(function(){
 	$( ".navButton" ).click(function() {
-		$(".navButton").attr("id","navb")
 		$("#statusBar").text("");
 		$title = $(this).attr("data-tooltip");
-		$("#statusBar").text($title);
+		$("#statusBar").append("<span class='spanBar'>"+$title+"</span>");
 
 	});
 	$("[data-tooltip]").mousemove(function (eventObject) {

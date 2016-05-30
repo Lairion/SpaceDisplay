@@ -63,9 +63,9 @@
 .mainTitle {
     left:40%;  
 	width: 20%;
-    
-	position: relative; 
+    position: relative; 
 	z-index: 5;
+    text-align: center;
 
 }
 #statusBar {
@@ -75,11 +75,15 @@
 	border-style : Solid;
   	border-color : #FFFFE0;
   	border-width: 0px 5px 0px 5px; 
-  	text-align: center;
-  	font-size: 100%;
-  	color: white; 
-  	height:10%;
-  	top: 0% 
+    height:10%;
+  	top: 0%;
+    overflow: hidden;
+}
+.mainTitle:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
 #consoleBar {
@@ -93,10 +97,12 @@
   	text-align: center;
   	font-size: 100%;
   	color: white;
-  	height:5%;
+  	height:7%;
   	bottom: 3%;
   	overflow: hidden;  
   	float: left;
+    text-align: center;
+    vertical-align: middle;
 
  }
 
