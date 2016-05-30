@@ -105,6 +105,15 @@
     vertical-align: middle;
 
  }
+#consoleInput{
+    color: aqua;
+    font-family: Neuropoliticalrg;
+    text-align: left;
+    width:100%; 
+    height:40%; 
+    position: relative; 
+    top:30%;
+}
 
 
 

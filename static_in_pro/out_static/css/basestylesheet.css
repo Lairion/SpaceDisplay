@@ -1,4 +1,3 @@
-
 body {
 	background-image: url('img/background/sixgran2.svg');
 	background-position: center center;
@@ -48,10 +47,20 @@ body {
   	
    
 }
+@font-face {
+    font-family: Neutronium;
+    src:url(fonts/Neutronium.ttf);
+   }
+@font-face {
+    font-family: Neuropoliticalrg;
+    src:url(fonts/neuropoliticalrg.ttf);
+   }
 .spanBar{
     display: inline-block;
     vertical-align: middle;
-    color: orange;
+    color: aqua;
     position: relative;
     font-size: 20px;
+    font-family: Neuropoliticalrg;
+    
 }
