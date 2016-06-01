@@ -5,10 +5,16 @@
 {% endblock %} 
 {% block desktop %}
 	<div class ="row" style="height: 74%";>
-		<div class="mainTitle" id="statusBar"></div>
-		<div class='SpaceWindow col-xs-12 col-md-12' style="height: 85%; position: relative; z-index: 1; top:-5%;">
+		<div class="mainTitle statusBar"></div>
+		<div class='SpaceWindow col-xs-12 col-md-12 mainWindow'>
+		    <div class="SpaceWindow contentCrew"></div>
 		</div>
-	    <div class="mainTitle" id="consoleBar"><span class="spanBar">Console</span></div>
-		<div class="SpaceWindow col-xs-12 col-md-12" style="height:10%; position: relative; z-index: 1; bottom:5%;"><input type="text" class="SpaceWindow" id="consoleInput" name=console/></div>
+	    <div class="mainTitle consoleBar">
+	        <span class="spanBar">Console</span>
+	    </div>
+		<div class="SpaceWindow col-xs-12 col-md-12 consolWindow">
+            <form class="formInput" method="get" action=""><input type="text" class="SpaceWindow consoleInput" name=console/>
+            </form>
+        </div>
 	</div>
 {% endblock %}

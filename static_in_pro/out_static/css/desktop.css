@@ -1,74 +1,36 @@
 .SpaceWindow {
 	background : #29AAE1;
   	background : rgba(41, 170, 225, 0.1);
-  	-moz-border-radius : 15px;
-    -webkit-border-radius : 15px;
-	text-align: center;
+  	text-align: center;
 	border-style : Solid;
   	border-color : #00FFFF;
   	border-color : rgba(0, 255, 255, 1);
-  	float: left;
-  	border-width: 0px 8px 0px 8px;
-
+  	float: left
 }
-
-#menuInLeft {
-	border-width : 3pt;
-  	padding: 2.5%;
-  	height: 100%;
-  	float: left;
-  	flex:1;
-		
-}
-.borderbutton {
-	background-image: url(img/background/bgbttn.svg);
-	background-position: left top;
-	background-size: cover;
-	border-style : Solid;
-  	border-color : #00FFFF;
-  	border-color : rgba(0, 255, 255, 1);
-  	border-width : 2pt;
-  	
-  }
-.pButton {
-	font-family : Exo DemiBold;
-  	font-weight : bold;
-  	font-size : 15pt;
-  	color : #00FFFF;
-  	color : rgb(0, 255, 255);
-}
-#mainWindow {
-	border-top-width: 0pt;
-	border-bottom-width: 0pt;
-	border-left-width: 3pt;
-	border-right-width: 3pt;
-	position: absolute;
+.mainWindow {
+    height: 85%; 
+    position: relative; 
+    z-index: 1; 
+    top:-5%;
+    border-width: 0px 5px 0px 5px;
+    -moz-border-radius : 15px;
+    -webkit-border-radius : 15px
   			
 }
-
-#Console {
-	border-top-width: 0pt;
-	border-bottom-width: 0pt;
-	border-left-width: 3pt;
-	border-right-width: 3pt;
-	position: absolute;
-  	height :10%;
-	margin: 1%;
-	margin-top: 100%;
-	padding: 2.5%;
-}
-
-
-
 .mainTitle {
     left:40%;  
 	width: 20%;
     position: relative; 
 	z-index: 5;
-    text-align: center;
-
+    text-align: center
 }
-#statusBar {
+.mainTitle:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.statusBar {
 	background-color: #000000; 
 	-moz-border-radius : 10px;
     -webkit-border-radius : 10px;
@@ -77,17 +39,11 @@
   	border-width: 0px 5px 0px 5px; 
     height:10%;
   	top: 0%;
-    overflow: hidden;
-}
-.mainTitle:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
+    overflow: hidden
 }
 
-#consoleBar {
-	
+
+.consoleBar {
 	background-color: #000000; 
 	-moz-border-radius : 7px;
     -webkit-border-radius : 7px;
@@ -103,17 +59,41 @@
   	float: left;
     text-align: center;
     vertical-align: middle;
-
- }
-#consoleInput{
+}
+.consoleInput{
     color: aqua;
     font-family: Neuropoliticalrg;
     text-align: left;
     width:100%; 
     height:40%; 
     position: relative; 
+}
+.consolWindow {
+    height:10%; 
+    position: relative;
+    z-index: 1;
+    bottom:5%;
+    border-width: 0px 5px 0px 5px;
+    -moz-border-radius : 15px;
+    -webkit-border-radius : 15px;
+    text-align: center
+    
+}
+.formInput {
+    width: 100%;
+    height: 100%;
+    position: relative;
     top:30%;
 }
-
+.contentCrew{
+    background : rgba(41, 170, 225, 0.2);
+    position:relative; 
+    left:1%;
+    top:8%;
+    height:85%;
+    width:98%;
+    -moz-border-radius : 10px;
+    -webkit-border-radius : 10px
+}
 
 
