@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from shipdisplay.models import CrewDB
+from shipdisplay.models import CrewDB, PeopleDB
 # Create your views here.
 def base(request):
 	title = 'Space Ship'
@@ -10,9 +10,9 @@ def base(request):
 
 def desktop(request):
     title = 'Desktop'
-    crew = CrewDB.objects.all()
+    crew_list = CrewDB.objects.all() 
     context = {
         "title":title,
-        "crew":crew,
+        "crew_list":crew_list,
     }
     return render(request,"desktop.html", context)
