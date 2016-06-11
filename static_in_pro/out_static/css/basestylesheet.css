@@ -23,7 +23,7 @@ body {
 	background-color: none;
     margin: 0%;
 }
-.tooltip {
+#tooltip {
 	font-size: 18px; 
   	z-index: 9999;
   	position: absolute;
@@ -39,6 +39,8 @@ body {
   	border-width: 3px;
     text-align: center;
     vertical-align: middle;
+    .opacity(0.5);
+    .rounded(5px);
   	
    
 }

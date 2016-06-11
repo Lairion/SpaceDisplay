@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$( ".navButton" ).click(function() {
+	$( ".navbutton" ).click(function() {
 		$(".statusBar").text("");
 		$title = $(this).attr("data-tooltip");
 		$(".statusBar").append("<span class='spanBar'>"+$title+"</span>");
@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         $data_tooltip = $(this).attr("data-tooltip");
         
-        $(".tooltip").text($data_tooltip)
+        $("#tooltip").text($data_tooltip)
                      .css({ 
                          "top" : eventObject.pageY + 5,
                         "left" : eventObject.pageX + 5
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     }).mouseout(function () {
 
-        $(".tooltip").hide()
+        $("#tooltip").hide()
                      .text("")
                      .css({
                          "top" : 0,

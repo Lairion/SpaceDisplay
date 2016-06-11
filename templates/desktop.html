@@ -9,7 +9,8 @@
 		<div class='SpaceWindow col-xs-12 col-md-12 mainWindow'>
 		    <div class="SpaceWindow contentCrew container-fluid">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6 spaceRowCrew" >
+                        <div class="col-sm-6 col-md-6 spaceRowCrew" style="border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px" >
                            {% for obj in crew_list %}
                            <div class="row spaceRow">
                                 <div class="col-sm-9 col-md-9 spaceColumm" style="border-left:0px">{{ obj.people_id }}</div>
@@ -17,7 +18,8 @@
                            </div>
                            {% endfor %}
                         </div>
-                        <div class="col-sm-6 col-md-6 spaceRowCrew" ></div>
+                        <div class="col-sm-6 col-md-6 spaceRowCrew" style="border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px"></div>
                     </div>
             </div>
         </div>
