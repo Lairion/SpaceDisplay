@@ -122,6 +122,29 @@
     -webkit-border-radius : 4px;
     
 }
+.descrip{
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.img_middle {
+    border-color:blue; 
+    border-style:solid; 
+    border-width: 3px; 
+    width:80%;  
+    position:relative;
+    left: 10%;
+    top: 13%;
+}
+.con_descrip {
+    border-color: blue; 
+    border-style: solid; 
+    border-width: 3px;
+    border-radius: 5px;
+    background-color: rgba(124, 252, 0, 0.5);
+}
 
 
 

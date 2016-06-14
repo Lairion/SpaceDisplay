@@ -18,7 +18,10 @@ body {
 	stroke-miterlimit:10;
 }
 
-
+p {
+    font-family: Neuropoliticalrg;
+    font-size: 20px
+}
 .navmenu {
 	background-color: none;
     margin: 0%;

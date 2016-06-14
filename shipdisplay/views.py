@@ -16,3 +16,20 @@ def desktop(request):
         "crew_list":crew_list,
     }
     return render(request,"desktop.html", context)
+
+def description_crew(request):
+    if request.method == 'GET':
+        status = True;
+        descript = PeopleDB.objects.get(pk=request.session["crewman"])
+        context = {
+            "status": status,
+            "descript": descript,
+        }
+        return render(request,"include/description_crew.html", context)
+    else:
+        status = False
+        context = {
+            "status": status,
+        }
+        return render(request,"include/description_crew.html", context)
+        
