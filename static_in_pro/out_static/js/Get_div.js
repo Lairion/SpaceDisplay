@@ -5,11 +5,10 @@ jQuery(document).ready(function ($) {
             type: "GET",
             url: "/shipdisplay/description_crew/",
             data:{
-                'crewman':$(this).attr('crewman'),
+                'view':$(this).attr('crewman'),
             },
             dataType: "html",
             cache: false,
-            }
        });
     }
 });
