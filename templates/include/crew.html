@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-6 col-md-6 spaceRowCrew" style="border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px" >
+        {% for obj in crew_list %}
+        <div class="row spaceRow" crewman="{{ obj.people_id_id }}">
+                <div class="col-sm-6 col-md-6 spaceColumm" style="border-left:0px" >
+                    {{ obj.people_id }}
+                </div>
+                <div class="col-sm-3 col-md-3 spaceColumm">
+                    {{ obj.position }}
+                </div>
+                <div class="col-sm-3 col-md-3 spaceColumm">
+                    {{ obj.location }}
+                </div>
+         </div>
+        {% endfor %}
+    </div>
+    <div class="col-sm-6 col-md-6 spaceRowCrew" style="border-bottom-left-radius: 0px;border-top-left-radius: 0px">
+        {% include "description_crew.html" %}
+    </div>
+</div>
