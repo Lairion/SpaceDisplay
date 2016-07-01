@@ -5,20 +5,11 @@
 {% endblock %} 
 {% block desktop %}
 	<div class ="row" style="height: 74%";>
-		<div class="mainTitle statusBar"></div>
+		<div class="mainTitle statusBar"><span class='spanBar'>{{ title }}</span></div>
 		<div class='SpaceWindow col-xs-12 col-md-12 mainWindow'>
-		    <div class="SpaceWindow contentCrew container-fluid">
-                {% if status %}
-                    {% if request.session.view == 'Crew' %}
-                        {% include "include/crew.html" %}
-                    {% else %}
-                    <div style="position:relative"><p>{{ title }}</p></div>
-                    {% endif %}
-                    
-                {% else %}
-                     <div style="position:relative"><p>{{ title }}</p></div>
-                {% endif %}
-            </div>
+		    {% block main_window %}
+           
+            {% endblock %}
         </div>
 	    <div class="mainTitle consoleBar">
 	        <span class="spanBar">Console</span>
